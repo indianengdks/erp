@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1"
+>
+
+<title>
+Daily Customers
+</title>
+
+<link
+rel="stylesheet"
+href="css/style.css"
+>
+
+</head>
+
+<body>
+
+<div class="page">
+
+
+<!-- HEADER -->
+
+<div class="top">
+
+<h1>
+
+Daily Customers
+
+</h1>
+
+
+<a
+href="dashboard.html"
+class="back"
+>
+
+← Dashboard
+
+</a>
+
+
+</div>
+
+
+
+<!-- FORM -->
+
+<div class="card">
+
+<div class="form-box">
+
+
+<input
+type="date"
+id="date"
+>
+
+
+<input
+type="text"
+id="client"
+placeholder="Client Name"
+>
+
+
+<input
+type="number"
+id="mobile"
+placeholder="Mobile Number"
+>
+
+
+<input
+type="text"
+id="service"
+placeholder="Service"
+>
+
+
+<input
+type="text"
+id="staff"
+placeholder="Staff"
+>
+
+
+<input
+type="number"
+id="total"
+placeholder="Total Bill"
+>
+
+
+<input
+type="number"
+id="paid"
+placeholder="Paid Today"
+>
+
+
+<button
+id="saveCustomer"
+onclick="saveCustomer()"
+>
+
+Save Customer
+
+</button>
+
+
+</div>
+
+</div>
+
+
+
+<!-- TABLE -->
+
+<div class="table-card">
+
+<div class="table-wrap">
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Client</th>
+
+<th>Mobile</th>
+
+<th>Service</th>
+
+<th>Staff</th>
+
+<th>Total</th>
+
+<th>Paid</th>
+
+<th>S1 Date</th>
+
+<th>S1 Amt</th>
+
+<th>S2 Date</th>
+
+<th>S2 Amt</th>
+
+<th>Pending</th>
+
+<th>Status</th>
+
+<th>Edit</th>
+
+<th>Remove</th>
+
+</tr>
+
+</thead>
+
+
+<tbody
+id="rows"
+>
+
+</tbody>
+
+
+</table>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<script
+src="js/customer.js"
+></script>
+
+
+</body>
+
+</html>
+

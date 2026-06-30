@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>
+
+ERP Settings
+
+</title>
+
+<link
+rel="stylesheet"
+href="css/settings.css">
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+
+
+<div class="top">
+
+<div>
+
+<h1>
+
+Settings
+
+</h1>
+
+<p>
+
+Studio • ERP • Backup • Control
+
+</p>
+
+</div>
+
+
+<a
+href="dashboard.html"
+class="back">
+
+← Dashboard
+
+</a>
+
+</div>
+
+
+
+
+
+<div class="panel">
+
+
+
+<h2>
+
+Studio Settings
+
+</h2>
+
+
+<input
+id="studioName"
+placeholder="Studio Name">
+
+
+<input
+id="ownerName"
+placeholder="Owner Name">
+
+
+<input
+id="mobile"
+placeholder="Mobile Number">
+
+
+<input
+id="address"
+placeholder="Address">
+
+
+<input
+id="tax"
+type="number"
+placeholder="Tax %">
+
+
+
+<select
+id="currency">
+
+<option value="₹">
+
+₹ INR
+
+</option>
+
+<option value="$">
+
+$ USD
+
+</option>
+
+</select>
+
+
+
+
+<div class="checks">
+
+
+<label>
+
+<input
+type="checkbox"
+id="dark">
+
+Dark Mode
+
+</label>
+
+
+
+<label>
+
+<input
+type="checkbox"
+id="backup">
+
+Auto Backup
+
+</label>
+
+
+
+<label>
+
+<input
+type="checkbox"
+id="employee">
+
+Employee Access
+
+</label>
+
+
+</div>
+
+
+
+
+<div class="actions">
+
+
+<button
+onclick="saveSettings()">
+
+Save Settings
+
+</button>
+
+
+
+<button
+onclick="resetERP()">
+
+Reset ERP
+
+</button>
+
+
+</div>
+
+
+
+
+
+<hr>
+
+
+
+
+<h2>
+
+Account Security
+
+</h2>
+
+
+<input
+id="newLoginUser"
+placeholder="New Admin User ID">
+
+
+<input
+type="password"
+id="newLoginPass"
+placeholder="New Admin Password">
+
+
+
+<button
+class="update"
+
+onclick="changeLogin()">
+
+Update Login
+
+</button>
+
+
+
+
+
+<hr>
+
+
+
+
+<h2>
+
+Employee Login
+
+</h2>
+
+
+<input
+id="empUser"
+placeholder="Employee User ID">
+
+
+<input
+type="password"
+id="empPass"
+placeholder="Employee Password">
+
+
+
+<button
+class="employeeBtn"
+
+onclick="changeEmployee()">
+
+Update Employee
+
+</button>
+
+
+
+
+</div>
+
+</div>
+
+
+
+<script src="js/settings.js"></script>
+
+</body>
+
+</html>

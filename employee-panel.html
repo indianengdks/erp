@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>
+
+Employee Panel
+
+</title>
+
+<link
+rel="stylesheet"
+href="css/employee-panel.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+
+<div class="top">
+
+<h1>
+
+Employee Panel
+
+</h1>
+
+
+
+<div class="topRight">
+
+<div class="today">
+
+Today:
+<span id="todayDate"></span>
+
+</div>
+
+
+
+<button
+class="logoutBtn"
+onclick="logoutEmployee()">
+
+Logout
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="panel">
+
+<div class="form">
+
+<input
+id="empName"
+readonly>
+
+
+<input
+id="client"
+placeholder="Customer Name">
+
+
+<input
+id="mobile"
+placeholder="Customer Mobile">
+
+
+<input
+id="service"
+placeholder="Service Name">
+
+
+<input
+id="amount"
+type="number"
+placeholder="Amount">
+
+
+<select
+id="status">
+
+<option>
+Done
+</option>
+
+<option>
+Pending
+</option>
+
+</select>
+
+
+<input
+id="notes"
+placeholder="Notes">
+
+
+<button
+onclick="saveEntry()">
+
+Save Entry
+
+</button>
+
+</div>
+
+
+
+<div
+id="totalInfo"
+class="total">
+
+0 Customers
+<br><br>
+₹0
+
+</div>
+
+
+
+<div class="todayWork">
+
+<h2>
+
+Today's Entries
+
+</h2>
+
+<div
+id="entryList">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script src="js/employee-panel.js"></script>
+
+</body>
+
+</html>
+

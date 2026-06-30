@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>
+
+Monthly Report
+
+</title>
+
+<link
+rel="stylesheet"
+href="css/monthly-report.css">
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+
+<!-- HEADER -->
+
+<div class="top">
+
+<div>
+
+<h1>
+
+Monthly Report
+
+</h1>
+
+<p>
+
+Revenue • Expense • Profit Analytics
+
+</p>
+
+</div>
+
+
+<a
+href="dashboard.html"
+class="back">
+
+← Dashboard
+
+</a>
+
+</div>
+
+
+
+
+
+<!-- FILTER -->
+
+<div class="filters">
+
+
+<select id="month">
+
+<option value="">
+
+All Months
+
+</option>
+
+</select>
+
+
+
+<select id="staff">
+
+<option value="">
+
+All Staff
+
+</option>
+
+</select>
+
+
+
+<select id="service">
+
+<option value="">
+
+All Services
+
+</option>
+
+</select>
+
+
+
+<button
+onclick="loadReport()">
+
+Generate Report
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- SUMMARY -->
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+
+Revenue
+
+</h3>
+
+<div
+id="rev">
+
+₹0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Received
+
+</h3>
+
+<div
+id="rec">
+
+₹0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Expense
+
+</h3>
+
+<div
+id="exp">
+
+₹0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Profit
+
+</h3>
+
+<div
+id="profit">
+
+₹0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Pending
+
+</h3>
+
+<div
+id="pending">
+
+₹0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Customers
+
+</h3>
+
+<div
+id="count">
+
+0
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- TABLE -->
+
+<div class="tableBox">
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Customer</th>
+
+<th>Mobile</th>
+
+<th>Service</th>
+
+<th>Staff</th>
+
+<th>Total</th>
+
+<th>Paid</th>
+
+<th>Pending</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody
+id="rows">
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+<!-- ACTIONS -->
+
+<div class="actions">
+
+
+<button onclick="window.print()">
+
+Print
+
+</button>
+
+
+
+<button onclick="exportJSON()">
+
+Export
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script
+src="js/monthly-report.js">
+
+</script>
+
+</body>
+
+</html>

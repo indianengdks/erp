@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>
+Deepika Studio ERP
+</title>
+
+<link
+rel="stylesheet"
+href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+<!-- HEADER -->
+
+<div class="top">
+
+<div>
+
+<h1>
+Deepika Studio ERP
+</h1>
+
+<p class="sub">
+Business Dashboard
+</p>
+
+<div
+id="loginUser"
+class="login-user">
+
+Logged In
+
+</div>
+
+</div>
+
+
+<div class="top-right">
+
+<a
+href="settings.html"
+class="settingsBtn">
+
+⚙ Settings
+
+</a>
+
+
+<button
+class="logout"
+onclick="logout()">
+
+Logout
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- CARDS -->
+
+<div class="cards">
+
+<div class="card">
+
+<h2>Total Revenue</h2>
+
+<div
+id="totalRevenue"
+class="price">
+
+₹0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Total Received</h2>
+
+<div
+id="totalReceived"
+class="price">
+
+₹0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Net Profit</h2>
+
+<div
+id="netProfit"
+class="price">
+
+₹0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Pending</h2>
+
+<div
+id="totalPending"
+class="price">
+
+₹0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Today's Booking</h2>
+
+<div
+id="todayBooking"
+class="price">
+
+0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Total Customers</h2>
+
+<div
+id="customerCount"
+class="price">
+
+0
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- GRAPH -->
+
+<div class="dashboard-grid">
+
+
+
+<div class="chart">
+
+<h2>
+Monthly Profit
+</h2>
+
+<div
+id="profitChart"
+class="fake-chart">
+
+₹0
+
+</div>
+
+</div>
+
+
+
+
+<div class="chart">
+
+<h2>
+Expense Distribution
+</h2>
+
+<div
+id="expenseChart"
+class="fake-chart">
+
+0%
+
+</div>
+
+</div>
+
+
+
+
+<div class="pending">
+
+<h2>
+Pending Customers
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Amount</th>
+
+</tr>
+
+</thead>
+
+
+<tbody
+id="pendingRows">
+
+<tr>
+
+<td>No Data</td>
+
+<td>₹0</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<a
+href="customers.html"
+class="viewBtn">
+
+View All →
+
+</a>
+
+</div>
+
+</div>
+
+
+
+
+<!-- QUICK ACTION -->
+
+<div class="quick">
+
+
+<a href="bookings.html">
+📅 Booking
+</a>
+
+
+<a href="customers.html">
+👥 Customers
+</a>
+
+
+<a href="expenses.html">
+💰 Expenses
+</a>
+
+
+<a href="monthly-report.html">
+📊 Reports
+</a>
+
+
+<a href="customer-profile.html">
+🧑 Profiles
+</a>
+
+
+<a href="employee-panel.html">
+👩 Employee
+</a>
+
+
+<a href="invoice.html">
+🧾 Invoice
+</a>
+
+
+<a href="backup.html">
+💾 Backup
+</a>
+
+
+</div>
+
+
+</div>
+
+
+<script
+src="js/dashboard.js">
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>
+ERP Backup
+</title>
+
+<link
+rel="stylesheet"
+href="css/backup.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+
+Backup Center
+
+</h1>
+
+
+<div class="box">
+
+<button
+onclick="exportData()">
+
+Export Backup
+
+</button>
+
+
+<label
+class="upload">
+
+Import Backup
+
+<input
+type="file"
+id="file"
+hidden>
+
+</label>
+
+
+
+<button
+class="danger"
+onclick="resetData()">
+
+Reset ERP
+
+</button>
+
+</div>
+
+
+<div
+class="info">
+
+Export →
+Download full ERP
+
+<br><br>
+
+Import →
+Restore all data
+
+<br><br>
+
+Reset →
+Delete all ERP
+
+</div>
+
+</div>
+
+
+<script
+src="js/backup.js">
+
+</script>
+
+</body>
+
+</html>

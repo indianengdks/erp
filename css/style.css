@@ -1,0 +1,315 @@
+/* =========================
+DEEPIKA STUDIO ERP
+FINAL STYLE.CSS
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI",sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+padding:24px;
+}
+
+/* PAGE */
+
+.page{
+max-width:1400px;
+margin:auto;
+}
+
+/* HEADER */
+
+.top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:35px;
+}
+
+h1{
+font-size:32px;
+color:#FFD700;
+font-weight:700;
+}
+
+.back{
+background:#FFD700;
+color:#000;
+padding:14px 26px;
+border-radius:18px;
+text-decoration:none;
+font-weight:700;
+display:inline-block;
+}
+
+/* CARD */
+
+.card{
+
+background:#06134a;
+
+padding:28px;
+
+border-radius:32px;
+
+margin-bottom:28px;
+
+overflow:hidden;
+
+}
+
+/* FORM */
+
+.form-box{
+
+display:grid;
+
+grid-template-columns:
+repeat(
+4,
+1fr
+);
+
+gap:18px;
+
+align-items:center;
+
+}
+
+/* INPUT */
+
+.form-box input{
+
+width:100%;
+
+min-width:0;
+
+height:60px;
+
+padding:0 18px;
+
+border:none;
+
+outline:none;
+
+border-radius:18px;
+
+background:#ececec;
+
+font-size:16px;
+
+}
+
+/* BUTTON */
+
+.form-box button{
+
+width:100%;
+
+height:60px;
+
+border:none;
+
+border-radius:18px;
+
+background:#FFD700;
+
+font-size:18px;
+
+font-weight:700;
+
+cursor:pointer;
+
+}
+
+/* TABLE */
+
+.table-card{
+
+background:#06134a;
+
+padding:22px;
+
+border-radius:32px;
+
+overflow:hidden;
+
+}
+
+.table-wrap{
+
+overflow-x:auto;
+
+overflow-y:hidden;
+
+}
+
+table{
+
+width:max-content;
+
+min-width:100%;
+
+border-collapse:separate;
+
+border-spacing:0;
+
+}
+
+/* HEADER */
+
+thead th{
+
+background:#FFD700;
+
+color:#000;
+
+padding:18px;
+
+font-size:14px;
+
+white-space:nowrap;
+
+}
+
+thead th:first-child{
+
+border-top-left-radius:20px;
+
+}
+
+thead th:last-child{
+
+border-top-right-radius:20px;
+
+}
+
+/* BODY */
+
+tbody td{
+
+padding:18px;
+
+font-size:14px;
+
+text-align:center;
+
+white-space:nowrap;
+
+border-bottom:
+1px solid rgba(255,255,255,.08);
+
+}
+
+/* TABLE INPUT */
+
+tbody input{
+
+width:120px;
+
+height:42px;
+
+padding:0 10px;
+
+border:none;
+
+border-radius:12px;
+
+}
+
+/* TABLE BUTTON */
+
+tbody button{
+
+width:42px;
+
+height:42px;
+
+border:none;
+
+border-radius:12px;
+
+background:#FFD700;
+
+}
+
+/* STATUS */
+
+.status{
+
+color:#FFD700;
+
+font-weight:700;
+
+}
+
+/* SCROLL */
+
+::-webkit-scrollbar{
+
+height:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#777;
+
+border-radius:20px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+.form-box{
+
+grid-template-columns:
+repeat(
+2,
+1fr
+);
+
+}
+
+}
+
+@media(max-width:700px){
+
+body{
+
+padding:14px;
+
+}
+
+.form-box{
+
+grid-template-columns:
+1fr;
+
+}
+
+.top{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+h1{
+
+font-size:28px;
+
+}
+
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>
+Bookings
+</title>
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="top">
+
+<h1>
+
+Bookings
+
+</h1>
+
+<a
+href="dashboard.html"
+class="back"
+
+>
+
+← Dashboard
+
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="form-box">
+
+<input
+type="text"
+id="bookingId"
+placeholder="Booking ID Auto"
+disabled
+
+>
+
+<input
+type="text"
+id="client"
+placeholder="Client Name"
+
+>
+
+<input
+type="number"
+id="mobile"
+placeholder="Mobile Number"
+
+>
+
+<input
+type="date"
+id="event"
+
+>
+
+<input
+type="text"
+id="package"
+placeholder="Package Name"
+
+>
+
+<input
+type="number"
+id="amount"
+placeholder="Package Amount"
+
+>
+
+<input
+type="date"
+id="advanceDate"
+
+>
+
+<input
+type="number"
+id="advance"
+placeholder="Advance Amount"
+
+>
+
+<button
+
+id="saveBooking"
+
+onclick="saveBooking()"
+
+>
+
+Save Booking
+
+</button>
+
+</div>
+
+</div>
+
+<div class="table-card">
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Booking ID</th>
+
+<th>Client</th>
+
+<th>Mobile</th>
+
+<th>Event Date</th>
+
+<th>Package</th>
+
+<th>Total</th>
+
+<th>Advance</th>
+
+<th>S1 Date</th>
+
+<th>S1 Service</th>
+
+<th>Paid1</th>
+
+<th>S2 Date</th>
+
+<th>S2 Service</th>
+
+<th>Paid2</th>
+
+<th>S3 Date</th>
+
+<th>S3 Service</th>
+
+<th>Paid3</th>
+
+<th>Pending</th>
+
+<th>Status</th>
+
+<th>Edit</th>
+
+<th>Remove</th>
+
+</tr>
+
+</thead>
+
+<tbody
+id="rows"
+>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/config.js"></script>
+
+<script src="js/booking.js"></script>
+
+</body>
+
+</html>

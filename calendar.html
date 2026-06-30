@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>
+
+Booking Calendar
+
+</title>
+
+<link
+rel="stylesheet"
+href="css/calendar.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+<!-- HEADER -->
+
+<div class="top">
+
+<div>
+
+<h1>
+
+Booking Calendar
+
+</h1>
+
+<p>
+
+Appointments • Schedule • Customer Flow
+
+</p>
+
+</div>
+
+
+<a
+href="dashboard.html"
+class="back">
+
+← Dashboard
+
+</a>
+
+</div>
+
+
+
+
+
+<!-- SUMMARY -->
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+
+Today's Bookings
+
+</h3>
+
+<div
+id="todayCount">
+
+0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Upcoming
+
+</h3>
+
+<div
+id="upcoming">
+
+0
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+
+Completed
+
+</h3>
+
+<div
+id="completed">
+
+0
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- FORM -->
+
+<div class="bookingBox">
+
+
+<input
+id="bDate"
+type="date">
+
+
+<input
+id="bTime"
+type="time">
+
+
+<input
+id="bCustomer"
+placeholder="Customer Name">
+
+
+<input
+id="bMobile"
+placeholder="Mobile">
+
+
+<input
+id="bService"
+placeholder="Service">
+
+
+<input
+id="bStaff"
+placeholder="Staff">
+
+
+<button
+onclick="saveBooking()">
+
+Save Booking
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- LIST -->
+
+<div
+id="bookingList">
+
+</div>
+
+
+
+</div>
+
+
+
+<script
+src="js/calendar.js">
+
+</script>
+
+</body>
+
+</html>
+
